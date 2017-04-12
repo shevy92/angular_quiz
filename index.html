@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app="myQuiz">
+<html ng-app="">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 		    <h1>Test Your Knowledge: <span>HTML and CSS</span></h1>
 		    
 		    <div class="progress">
-		        {{totalQuestions}}
+		        {{ greeting }}
 		    </div>
 		    
 		    <div class="intro">
@@ -50,9 +50,43 @@
 		    
 		</div>
 		
-		<script type="text/javascript" source="js/angular.min.js"></script>
 		
-		<script type="text/javascript" source="js/quiz.js"></script>
+		<script type="text/javascript" source="/js/angular.min.js"></script>
+		
+		<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>-->
+    
+		
+		<script type="text/javascript" source="/js/quiz.js"></script>
+		
+		<!--
+		<script>
+            (function(){
+
+                var app = angular.module('myQuiz', []);
+
+                app.controller('QuizController',['$scope','$http', '$sce',function($scope,$http,$sce){
+
+                    $scope.score = 0;
+                    $scope.activeQuestion = -1;
+                    $scope.activeQuestionAnswered = 0;
+                    $scope.percentage = 0;
+
+
+                    $http.get('quiz_data.json').then(function(quizData){
+                        $scope.myQuestions = quizData.data;
+                        $scope.totalQuestions = $scope.myQuestions.length;
+                    });
+
+                    $scope.greeting = { text: 'Hello' };
+
+
+
+                }]);
+
+
+            })();
+        </script>
+		-->
 
 	</body>
 </html>
