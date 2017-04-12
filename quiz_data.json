@@ -1,0 +1,56 @@
+[
+    {
+        "question" : "How can you make a list that lists the items with numbers?",
+        "answers" : [
+            {"id" : 0, "text" : "OL"},
+            {"id" : 1, "text" : "DL"},
+            {"id" : 2, "text" : "UL"},
+            {"id" : 3, "text" : "List"}
+        ],
+        "correct" : 0, 
+        "feedback" : "These all seem like they might do the same thing, but you need to pay close attention to the characters!"
+    },
+    {
+        "question" : "Which is the correct CSS syntax?",
+        "answers" : [
+            {"id" : 0, "text" : "body:color=black;"},
+            {"id" : 1, "text" : "{body;color:black}"},
+            {"id" : 2, "text" : "{body:color=black(body};"},
+            {"id" : 3, "text" : "body {color: black;}"}
+        ],
+        "correct" : 3
+    },
+    {
+        "question" : "Choose the correct HTML element to define important text",
+        "answers" : [
+            {"id" : 0, "text" : "<i>"},
+            {"id" : 1, "text" : "<b>"},
+            {"id" : 2, "text" : "<em>"},
+            {"id" : 3, "text" : "<strong>"}
+        ],
+        "correct" : 3,
+        "feedback" : "This one might seem tricky, as many of these could be used to place emphasis on text."
+    },
+    {
+        "question" : "What does this style: #box{width:200px;}",
+        "answers" : [
+            {"id" : 0, "text" : "All boxes"},
+            {"id" : 1, "text" : "Only the object with the ID selector 'box'"},
+            {"id" : 2, "text" : "Boxes with a width of 200px"},
+            {"id" : 3, "text" : "None of the above"}
+        ],
+        "correct" : 1,
+        "feedback" : "Remember, classes are used to select multiple elements."
+    },
+    {
+        "question" : "What is the correct HTML element for inserting a line break?",
+        "answers" : [
+            {"id" : 0, "text" : "<break>"},
+            {"id" : 1, "text" : "<lb>"},
+            {"id" : 2, "text" : "<br />"},
+            {"id" : 3, "text" : "&nbsp;"}
+        ],
+        "correct" : 2,
+        "feedback" : "Note: '&nbsp;' is a no-break space,  to put more than one space between two words or two objects on a Web page."
+    }
+]

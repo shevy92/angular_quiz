@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html ng-app="myQuiz">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test Your Knowledge: Saturn</title>
+		<link rel="stylesheet" type="text/css" href="css/quiz.css">
+	</head>
+	<body>
+
+		<div id="myQuiz" ng-controller="QuizController">
+		    
+		    <h1>Test Your Knowledge: <span>HTML and CSS</span></h1>
+		    
+		    <div class="progress">
+		        {{totalQuestions}}
+		    </div>
+		    
+		    <div class="intro">
+		        <h2>Welcome</h2>
+		        <p>Click begin to test your HTML and CSS knowledge!</p>
+		        <p class="btn">Begin</p>
+		    </div>
+		    
+		    <div class="question answered">
+		        <p class="text">This is a question?</p>
+		        <p class="answer">Answer 1</p>
+		        <p class="answer selected">Answer 2</p>
+		        <p class="answer correct">Answer 3</p>
+		        <p class="answer">Answer 4</p>
+		        
+		        <div class="feedback">
+		            <p>You are <strong>correct!</strong></p>
+		            <p>Oops! That is not correct.</p>
+		            <p>Additional feedback.</p>
+		            <div class="btn">Continue</div>
+		        </div>
+		    </div>
+		    
+		    <div class="results">
+		        <h3>Results</h3>
+		        <p>You scored X% by correctly answering X of the total X questions.</p>
+		        <p>Use the links below to challenge your friends.</p>
+		        <div class="share">
+		            <a class="btn email" href="#">Email</a>
+		            <a class="btn twitter" href="#">Tweet</a>
+		        </div>
+		        
+		    </div>
+		    
+		</div>
+		
+		<script type="text/javascript" source="js/angular.min.js"></script>
+		
+		<script type="text/javascript" source="js/quiz.js"></script>
+
+	</body>
+</html>
