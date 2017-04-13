@@ -15,21 +15,18 @@
 		    <h1>Test Your Knowledge: <span>HTML and CSS</span></h1>
 		    
 		    <div class="progress">
-		        {{ totalQuestions }}
+		        <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
 		    </div>
 		    
-		    <div class="intro">
+		    <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 		        <h2>Welcome</h2>
 		        <p>Click begin to test your HTML and CSS knowledge!</p>
-		        <p class="btn">Begin</p>
+		        <p class="btn" ng-click="activeQuestion = 0">Begin</p>
 		    </div>
 		    
-		    <div class="question answered">
-		        <p class="text">This is a question?</p>
-		        <p class="answer">Answer 1</p>
-		        <p class="answer selected">Answer 2</p>
-		        <p class="answer correct">Answer 3</p>
-		        <p class="answer">Answer 4</p>
+		    <div class="question answered" ng-repeat="myQuestion in myQuestions">
+		        <p class="text"> {{myQuestion.question}} </p>
+		        <p class="answer" ng-repeat="Answer in myQuestions[$index].answers"> {{Answer.text}} </p>
 		        
 		        <div class="feedback">
 		            <p>You are <strong>correct!</strong></p>
