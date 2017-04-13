@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
-<html ng-app="">
+<html ng-app="myQuiz">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Test Your Knowledge: HTML and CSS</title>
 		<link rel="stylesheet" type="text/css" href="css/quiz.css">
+		
+		
 	</head>
 	<body>
 
@@ -13,7 +15,7 @@
 		    <h1>Test Your Knowledge: <span>HTML and CSS</span></h1>
 		    
 		    <div class="progress">
-		        {{ greeting }}
+		        {{ totalQuestions }}
 		    </div>
 		    
 		    <div class="intro">
@@ -51,12 +53,10 @@
 		</div>
 		
 		
-		<script type="text/javascript" source="/js/angular.min.js"></script>
-		
 		<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>-->
     
 		
-		<script type="text/javascript" source="/js/quiz.js"></script>
+		
 		
 		<!--
 		<script>
@@ -87,6 +87,10 @@
             })();
         </script>
 		-->
+		
+		
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/quiz.js"></script>
 
 	</body>
 </html>
