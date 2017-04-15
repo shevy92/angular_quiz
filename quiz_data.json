@@ -35,7 +35,7 @@
         "question" : "What does this style: #box{width:200px;}",
         "answers" : [
             {"id" : 0, "text" : "All boxes"},
-            {"id" : 1, "text" : "Only the object with the ID selector 'box'"},
+            {"id" : 1, "text" : "Object with ID selector 'box'"},
             {"id" : 2, "text" : "Boxes with a width of 200px"},
             {"id" : 3, "text" : "None of the above"}
         ],
