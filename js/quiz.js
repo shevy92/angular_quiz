@@ -11,8 +11,8 @@
         
     
     
-    
-        $http.get('../quiz_data.json').then(function(quizData){
+    /*../quiz_data.json*/
+        $http.get('https://raw.githubusercontent.com/shevy92/angular_quiz/master/quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
             $scope.totalQuestions = $scope.myQuestions.length;
         });
